@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontend</title>
+    <style>
+        input[type='file'] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- lesson 3 -->
+
+    <h1>1. lorem</h1>
+    <p><b>Lorem</b>, ipsum <i>dolor.</i></p>
+    <h2>2. lorem</h2>
+    <p><strong>Lorem</strong>, ipsum <em>dolor</em>.</p>
+    <h3>3. lorem</h3>
+    <p><del>Lorem</del>, ipsum <ins>dolor.</ins></p>
+    <h4>4. lorem</h4>
+    <p><u>Lorem</u>, ipsum <sup>dolor</sup>.</p>
+    <h5>5. lorem</h5>
+    <p><sub>Lorem</sub>, ipsum  <mark>dolor</mark>.</p>
+    <h6>6. lorem</h6>
+
+    <!-- /// -->
+
+    <!-- Списки -->
+
+    <ol>
+        <li>Первый элемент списка. Имеет две составляющих:</li>
+        <ul type='circle'>
+            <li>Первая составляющая</li>
+            <li>Вторая составляющая</li>
+        </ul>   
+        <li>Второй элемент списка. Имеет три составляющих:</li>
+        <ul>
+            <li>Первая составляющая. Также разделяется на две части:</li>
+            <ul type='square'>
+                <li>Первая часть</li>
+                <li>Вторая часть</li>
+            </ul>
+            <li>Вторая составляющая</li>
+        </ul> 
+        <li>Третий элемент списка</li>
+    </ol>
+    
+    <!-- ... -->
+
+    <!-- Таблицы -->
+
+    <table border="1px">
+        <caption>Добыча драгоценных камней</caption>
+        <th width='130px'></th>
+        <th width='65px'>2010</th>
+        <th width='65px'>2012</th>
+        <th width='65px'>2014</th>
+        <tr>
+            <td>Сапфиры</td>
+            <td rowspan="2">1483</td>
+            <td>4532</td>
+            <td>6743</td>
+        </tr>
+        <tr>
+            <td>Рубины</td>
+            <td>3835</td>
+            <td>7482</td>
+        </tr>
+        <tr>
+            <td>Алмазы</td>
+            <td>683</td>
+            <td colspan="2">238</td>
+        </tr>
+    </table>
+
+    <!-- ... -->
+
+    <!-- Урок 5 -->
+
+    <form action="" method="GET">
+        <p>Name: <input type="text" placeholder="Name"></p>
+        <p>Surename: <input type="text" placeholder="Surename"></p> 
+        <p>
+            <label for="male">Man</label>
+            <input type="radio" value="male" id="male" name="gender">
+            <label for="female">Woman</label>
+            <input type="radio" value="female" id="female" name="gender">
+        </p>
+        <p>
+            About: <br>
+            <input type="radio" name="about"> Меньше 18 <br>
+            <input type="radio" name="about"> От 18 до 35 <br>
+            <input type="radio" name="about"> Больше 35 <br>
+            <input type="checkbox"> Женат /-a <br>
+            <input type="checkbox"> Есть кошка
+        </p>
+        <input type="submit">
+    </form>
+
+    <!-- /// -->
+
+    <!-- lesson 6 -->
+
+    <a href="https://facebook.com" class="first">facebook</a>
+    <a href="https://instagram.com" class="second">instagram</a>
+    <a href="https://youtube.com" class="third">youtube</a>
+    <h1 id="one" align='left'>Загаловок1</h1>
+    <h1 id="two" align='center'>Загаловок2</h1>
+    <h1 id="three" align='right'>Загаловок3</h1>
+
+    <!-- /// -->
+
+</body>
+</html>
