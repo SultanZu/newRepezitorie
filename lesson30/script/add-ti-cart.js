@@ -11,15 +11,15 @@ let img = document.getElementsByClassName('opis_cont')[0].getElementsByTagName('
 // по клику получить адрес картинки с помощью js
 // попробуйте с помощью js поменять название товара цену товара 
 
-// let element = document.getElementsByClassName('add_card');
+let element = document.getElementsByClassName('add_card');
 
-// for (let i = 0; i < element.length; i++) {
-//     element[i].onclick = function () {
-//         console.log(this.parentNode.parentNode.querySelectorAll('.title > p')[0].innerText);
-//         console.log(this.parentNode.parentNode.querySelectorAll('.price > span')[0].innerText);
-//         console.log(this.parentNode.parentNode.querySelectorAll('.img > img')[0])
-//     }
-// }
+for (let i = 0; i < element.length; i++) {
+    element[i].onclick = function () {
+        console.log(this.parentNode.parentNode.querySelectorAll('.title > p')[0].innerText);
+        console.log(this.parentNode.parentNode.querySelectorAll('.price > span')[0].innerText);
+        console.log(this.parentNode.parentNode.querySelectorAll('.img > img')[0]);
+    }
+}
 
 // lesson 30
 
