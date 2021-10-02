@@ -1,58 +1,68 @@
 (function () {
     'use strict';
 
-    /// LESSON 51
+    /// LESSON 52
 
-    const inputSom = document.querySelector('#som');
-    const inputUsd = document.querySelector('#usd');
-    const inputRub = document.querySelector('#rub');
-    const paEuro = document.querySelector('#euro');
+    var arr = ["apple", "banana", "potato"];
+    
+    // forEach
+    
 
-    inputRub.addEventListener('input', () => {
-        fetch('current.json', {
-            method: "GET",
-            headers: {
-                "Content-type": "application/json"
-            }
-        })
-        /// rub
-        .then(response => response.json())
-        .then(json => {
-            inputUsd.value = (inputRub.value / json.currentRub.usd).toFixed(2);
-            inputSom.value = (inputRub.value / json.currentRub.som).toFixed(2);
-        })
- 
-    });
-    inputSom.addEventListener('input', () => {
-        fetch('current.json', {
-            method: "GET",
-            headers: {
-                "Content-type": "application/json"
-            }
-        })
-        /// som
-        .then(response => response.json())
-        .then(json => {
-            inputUsd.value = (inputSom.value / json.currentSom.usd).toFixed(2);
-            inputRub.value = (inputSom.value / json.currentSom.rub).toFixed(2);
-            paEuro.innerHTML = (inputSom.value / json.currentSom.euro).toFixed(2);
-        })
-    });
+    // filter
+    // const result = arr.filter((name) => {
+    //     if (name.length <= 5) {
+    //         return name;
+    //     }
+    // });
+    // console.log(result);
+
+    //map
+    // const result = arr.map(item => item.toUpperCase());
+    // console.log(result);
+    // console.log(arr);
+
+    // every/some
+    // const arr2 = ['one', 'THREE']
+    // // const result = arr2.some(item => typeof(item) === 'number');
+    // const result = arr2.every(item => typeof(item) === 'string');
+
+    // console.log(result);
+
+    // reduce
+    // const one = [1, 2, 3, 4, 5];
+
+    // const result = one.reduce((count, item) => count + item);
+
+    // console.log(result);
+
+    // const obj = {
+    //     zamatuulu: "sname",
+    //     sultan: "name",
+    //     21: "age"
+    // }
+
+    // const result = Object.entries(obj)
+    // .filter(item => item[1] === 'name')
+    // .map(item => item[0]);
+
+    // console.log(result);
 
 
-    inputUsd.addEventListener('input', () => {
-        fetch('current.json', {
-            method: "GET",
-            headers: {
-                "Content-type": "application/json"
-            }
-        })
-        /// usd
-        .then(response => response.json())
-        .then(json => {
-            inputSom.value = (inputUsd.value / json.currentUsd.som).toFixed(2);
-            inputRub.value = (inputUsd.value / json.currentUsd.rub).toFixed(2);
-        })
-    });
+    // HOMEWORK
+    // №1
+
+    let quest = 'Sultan, Belek, Aibek';
+    let result = quest.split(', ');
+    console.log(result);
+
+    // №2
+    let input = '1, 2, 3, 12';
+    let res = () => {
+        let convert = input.split(', ');
+        return convert.reduce((count, item) => +count + +item);
+    }
+    console.log(res());
+    // //
+
     ///
 }());
