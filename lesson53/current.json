@@ -1,0 +1,15 @@
+{
+    "currentSom": {
+        "usd": 84.79,
+        "rub": 1.17,
+        "euro": 98.31
+    },
+    "currentRub": {
+        "usd": 72.67,
+        "som": 0.86
+    },
+    "currentUsd": {
+        "som": 0.012,
+        "rub": 0.014
+    }
+}
