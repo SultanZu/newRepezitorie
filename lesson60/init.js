@@ -5,10 +5,10 @@ export function getData() {
     let placeOfBirth = prompt("place of birth","Talas");
 
     const data = {
-        a: name,
-        b: surName,
-        c: dateOfBirth,
-        d: placeOfBirth
+        nameOfUser: name,
+        surname: surName,
+        dateOfBirth: dateOfBirth,
+        placeOfBirth: placeOfBirth
     };
     return data;
 }
